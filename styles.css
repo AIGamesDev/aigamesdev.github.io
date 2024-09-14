@@ -1,0 +1,9 @@
+/* Custom styles can go here */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.content {
+    /* Padding can be controlled here */
+    padding: 40px;
+}
