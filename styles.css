@@ -1,9 +1,96 @@
 /* Custom styles can go here */
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
-.content {
-    /* Padding can be controlled here */
-    padding: 40px;
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
 }
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.navbar,
+.footer {
+  background-color: #1c1c1c;
+}
+.navbar-brand img {
+  height: 40px;
+}
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+}
+.btn-custom {
+  background-color: #007bff;
+  color: #fff;
+}
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.title-homepage {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-top: 10px; /* Adds some spacing */
+  color: #f1f1f1; /* Matches the site color scheme */
+}
+
+.text-center {
+  max-width: 80%; /* Adjust this percentage to control how wide you want the content */
+  margin: 0 auto; /* This centers the content within the column */
+}
+
+.text-center p {
+  margin: 20px 0; /* Reduces margin around the paragraph */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Make sure the container is centered and avoid unnecessary overflow */
+.container {
+  max-width: 1200px; /* Limit the width of the entire container */
+  padding: 0 15px; /* Adds padding to prevent overflow */
+}
+
+/* Center the titles, descriptions, and thumbnails properly */
+.text-center h4,
+.text-center p {
+  max-width: 90%; /* Prevents content from stretching too far */
+  margin: 0 auto; /* Centers the content */
+}
+
+.img-fluid {
+  max-width: 100%; /* Ensures the images never overflow their container */
+}
+
+.row {
+  margin: 0 auto; /* Ensures the row stays centered */
+}
+
+/* Custom margin for the buttons */
+.btn-custom {
+  margin-top: 20px;
+}
+
+.featured-padding
+{padding: 25px;}
