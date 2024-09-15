@@ -101,3 +101,29 @@ h4 {
   text-align: left; /* Ensures the text is aligned to the left within the container */
   padding: 15px;    /* Optional: Adds padding around the text */
 }
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the content is vertically centered */
+  text-align: center; /* Center text horizontally */
+  background-color: #121212; /* Match background color */
+  color: #f1f1f1; /* Match text color */
+}
+
+.error-page h1 {
+  font-size: 6rem; /* Adjust as needed */
+  margin-bottom: 20px; /* Space between heading and text */
+}
+
+.error-page p {
+  font-size: 1.5rem; /* Adjust as needed */
+  margin-bottom: 30px; /* Space between paragraph and link */
+}
+
+.error-page a {
+  font-size: 1.2rem; /* Adjust as needed */
+  color: #007bff; /* Match your button color */
+}
