@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-  margin: 0;
-  font-family: "IBM Plex Mono", serif;
+  font-family: "IBM Plex Mono", monospace;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -16,17 +16,14 @@ body {
 
 .main-title {
   font-size: 48px;
-  text-align: center;
-  margin-bottom: 10px;
-  line-height: 1.2;
+  margin: 10px 0;
 }
 
 .text-center {
   font-size: 24px;
   max-width: 90%;
-  margin: 0 auto;
-  padding: 10px;
-  margin-bottom: -25px;
+  margin: 10px auto;
+  padding: 0 10px;
 }
 
 .subtitle {
@@ -36,9 +33,9 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
-  gap: 15px; /* Space between items */
-  justify-content: center; /* Center the grid content */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-content: center;
   margin: 20px 0;
 }
 
@@ -46,14 +43,13 @@ body {
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-card img {
-  width: 100%; /* Full width inside the card */
-  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .image-card h4 {
@@ -76,7 +72,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure the navbar is always on top */
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -115,7 +111,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #000000;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +134,7 @@ body {
 
   .navbar-toggler {
     display: block;
-    color: #000000;
+    color: #000;
   }
 
   .navbar-links {
@@ -149,9 +145,8 @@ body {
 /* Footer Styles */
 footer {
   background-color: #eeeeee;
-  color: #000000;
   padding: 20px 0;
-  margin-top: auto; /* Push footer to the bottom */
+  margin-top: auto;
 }
 
 .footer-container {
@@ -238,15 +233,10 @@ footer {
   }
 }
 
-.navbar-container img {
-  width: 45px; /* Set the width to 500 pixels */
-  height: auto; /* Maintain the aspect ratio */
-}
-
 /* Projects Page Styles */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 4 projects per row */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   margin: 25px auto;
   max-width: 1200px;
@@ -254,17 +244,15 @@ footer {
 
 .project-card {
   text-align: center;
-  border: 1px solid #ddd; /* Optional: adds a light border */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
-  width: 100%; /* Full width of the card */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .project-card h4 {
@@ -276,19 +264,19 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 projects per row */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* 1 project per row */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -297,38 +285,91 @@ footer {
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
   color: #fff;
-  background-color: #000000; /* Primary blue */
+  background-color: #000000;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .themed-button:hover {
   background-color: #000000;
-  transform: translateY(-2px); /* Slight lift effect */
+  transform: translateY(-2px);
 }
 
 .themed-button:active {
-  background-color: #000000; /* Even darker blue on click */
-  transform: translateY(0); /* Reset lift effect */
+  background-color: #000000;
+  transform: translateY(0);
 }
 
 .themed-button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Accessible focus ring */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
+/* Button Container */
 .button-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 20vh; /* Adjust as needed to center within a section */
+  width: 100%;
+  margin-top: 10px;
 }
 
-/* Responsive Adjustments */
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  max-width: 450px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  box-sizing: border-box;
+}
+
+/* Fix input focus */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Contact Form Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+}
+
+/* Flexbox for main container */
+main.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
   .main-title {
     font-size: 36px;
@@ -375,41 +416,7 @@ footer {
   }
 }
 
-/* Contact Form Styles */
-.contact-form {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-  font-family: "IBM Plex Mono", monospace;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.captcha-container {
-  margin: 15px 0;
-}
-
-/* Adjust button styling to match website */
-.contact-form button {
-  width: 100%;
-  padding: 12px;
+.navbar-container img {
+  width: 45px; /* Adjusted size */
+  height: auto; /* Maintain aspect ratio */
 }

@@ -1,99 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI - Contact</title>
-    <link
-      rel="icon"
-      href="https://cdn.glitch.global/9b9c6de4-c316-4a6b-9a9b-385af21a6910/A%C3%8F.png?v=1735433485158"
-      type="image/png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-    </head>
-    <body>
-        <nav class="navbar ibm-plex-mono-semibold">
-            <div class="navbar-container">
-              <a href="/">
-                <img
-                  src="https://cdn.glitch.global/9b9c6de4-c316-4a6b-9a9b-385af21a6910/A%C3%8F.png?v=1735433485158"
-                  alt="Logo"
-                />
-              </a>
-              <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
-              <div class="navbar-links" id="navbar-links">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/">
+                <img src="https://cdn.glitch.global/9b9c6de4-c316-4a6b-9a9b-385af21a6910/A%C3%8F.png?v=1735433485158" alt="Logo" >
+            </a>
+            <button class="navbar-toggler" id="navbar-toggler">&#9776;</button>
+            <div class="navbar-links" id="navbar-links">
                 <a href="/" class="nav-link">HOME</a>
                 <a href="/about" class="nav-link">ABOUT</a>
                 <a href="/news" class="nav-link">NEWS</a>
                 <a href="/projects" class="nav-link">PROJECTS</a>
                 <a href="/era3" class="nav-link">ERA 3</a>
                 <a href="/aspectos" class="nav-link">aOS</a>
-              </div>
             </div>
-          </nav>
-          <div class="container">
-            <h1 class="main-title">CONTACT ME.</h1>
-            <p class="text-center">If you have any questions, suggestions, or anything else, feel free to contact me using the form below. It may take a while for me to respond since I don't have a ton of time on my hands, but I will make sure to respond to the forms. Please don't put nonsense on the forms.</p>
+        </div>
+    </nav>
 
-            <div class="contact-form">
-                <form target="_blank" action="https://formsubmit.co/5d30ee8a3835c7d66930ac8ab31c5f17" method="POST">
-                    <input type="text" name="name" class="form-control" placeholder="Name (Scratch Username)" required>
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                    <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
-                    
-                    <!-- Hidden Fields -->
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_autoresponse" value="Thank you for submitting a form! Check your email address for a response.">
-                    <input type="hidden" name="_next" value="/contact/thank-you/">
-                    <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-            
-            
-                    <div class="button-container">
-                        <button type="submit" class="themed-button">SUBMIT</button>
-                      </div>
-                </form>
-            </div>
-          <footer>
-            <div class="footer-container">
-              <div class="footer-left">
+    <main class="container contact-container">
+        <h1 class="main-title">CONTACT ME.</h1>
+        <p class="text-center">
+            If you have any questions, suggestions, or anything else, feel free to contact me using the form below.
+        </p>
+
+        <div class="contact-form">
+            <form action="https://formsubmit.co/5d30ee8a3835c7d66930ac8ab31c5f17" 
+            method="POST" >
+                <input type="text" name="name" class="form-control" placeholder="Name (Scratch Username)" required>
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
+
+                <!-- Hidden Fields -->
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_autoresponse" value="Thank you for submitting a form!">
+                <input type="hidden" name="_next" value="https://aigamesdev.github.io/contact/thank-you/">
+                <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+
+                <div class="button-container">
+                    <button type="submit" class="themed-button">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
                 <p>&copy; 2025 AIGamesDeveloper. All Rights Reserved.</p>
-              </div>
-              <div class="footer-right">
-                <ul class="social-links">
-                  <li>
-                    <a
-                      href="https://scratch.mit.edu/users/AIGamesDeveloper"
-                      target="_blank"
-                      aria-label="Scratch"
-                      >Scratch</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/themagicalbanana"
-                      target="_blank"
-                      aria-label="GitHub"
-                      >GitHub</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://aidev.weebly.com"
-                      target="_blank"
-                      aria-label="Weebly"
-                      >Old Website</a
-                    >
-                  </li>
-                </ul>
-              </div>
             </div>
-          </footer>
-          <script src="script.js"></script>
-    </body>
+            <div class="footer-right">
+                <ul class="social-links">
+                    <li><a href="https://scratch.mit.edu/users/AIGamesDeveloper" target="_blank">Scratch</a></li>
+                    <li><a href="https://github.com/themagicalbanana" target="_blank">GitHub</a></li>
+                    <li><a href="https://aidev.weebly.com" target="_blank">Old Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
