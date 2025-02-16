@@ -117,28 +117,29 @@ body {
 @media (max-width: 768px) {
   .navbar-links {
     display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    border-radius: 0 0 8px 8px;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
   }
 
   .navbar-links.open {
-    display: block;
+    display: flex !important;
+  opacity: 1;
+  visibility: visible;
   }
 
   .navbar-toggler {
     display: block;
     color: #000;
-  }
-
-  .navbar-links {
-    text-align: center;
   }
 }
 

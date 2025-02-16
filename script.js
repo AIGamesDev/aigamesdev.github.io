@@ -1,24 +1,24 @@
-const navbarToggler = document.getElementById("navbar-toggler");
-const navbarLinks = document.getElementById("navbar-links");
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if elements exist before adding event listeners
+  const navbarToggler = document.querySelector("#navbar-toggler");
+  const navbarLinks = document.querySelector("#navbar-links");
+  const navbar = document.querySelector(".navbar");
 
-navbarToggler.addEventListener("click", () => {
-  navbarLinks.classList.toggle("open");
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const navbar = document.querySelector('.navbar');
-  const titleSection = document.querySelector('.title-section');
-  
-  // Function to change navbar color on scroll
-  function changeNavbarColor() {
-    const sectionHeight = titleSection.clientHeight;
-    if (window.scrollY > sectionHeight) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+  if (navbarToggler && navbarLinks) {
+    navbarToggler.addEventListener("click", () => {
+      navbarLinks.classList.toggle("open");
+    });
   }
 
-  // Listen for the scroll event
-  window.addEventListener('scroll', changeNavbarColor);
+  if (navbar) {
+    function changeNavbarColor() {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    }
+    window.addEventListener("scroll", changeNavbarColor);
+  }
 });
