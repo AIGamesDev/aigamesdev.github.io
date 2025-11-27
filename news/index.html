@@ -64,6 +64,7 @@
 
       .news-content-container {
         flex: 1; /* Let the content fill the remaining space */
+        cursor: pointer;
       }
 
       .news-title {
@@ -117,7 +118,7 @@
     </style>
   </head>
   <body>
-    <!-- navbar content -->
+    <!-- Main navigation bar -->
     <nav class="navbar ibm-plex-mono-semibold">
       <div class="navbar-container">
         <a href="/">
@@ -146,17 +147,13 @@
       <div class="news-container">
         <h2 class="subtitle">LATEST NEWS</h2>
         <div class="news-grid">
-          <div class="news-card">
-            <img
+            <div class="news-card">
+            <a href="/news/brand-new-website/" class="news-link" style="display: contents;">
+              <img
               src="https://cdn.glitch.global/9b9c6de4-c316-4a6b-9a9b-385af21a6910/A%C3%8F.png?v=1735433485158"
               alt="News Image"
-              class="news-image"
-            />
-            <div
-              class="news-content-container"
-              style="cursor: pointer"
-              onclick="window.location='/news/brand-new-website/';"
-            >
+              class="news-image" />
+              <div class="news-content-container">
               <h2 class="news-title">Official Website Launch</h2>
               <p class="news-date">January 29, 2025</p>
               <p class="news-content">
@@ -164,15 +161,16 @@
                 features that I have added to my website, why it's better to
                 make my own website, and what features I will be adding.
               </p>
+              </div>
+            </a>
             </div>
-          </div>
         </div>
       </div>
     </div>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
-          <p>&copy; 2025 AIGamesDeveloper. All Rights Reserved.</p>
+          <p>&copy; <span id="copyright-year"></span> AIGamesDeveloper. All Rights Reserved.</p>
         </div>
         <div class="footer-right">
           <ul class="social-links">
@@ -204,6 +202,9 @@
         </div>
       </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="/script.js"></script>
+    <script>
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

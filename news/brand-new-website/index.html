@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AI News - Brand New Website</title>
+    <title>Official Website Launch | News & Updates</title>
     <link
       rel="icon"
       href="https://cdn.glitch.global/9b9c6de4-c316-4a6b-9a9b-385af21a6910/AI%CC%88%20logo%20(PFP).png?v=1735853536959"
@@ -62,7 +62,7 @@
         I no longer have the watermark for Weebly there, and I can have my own
         custom header now. It's way easier to import links now, and I can
         customize the links as well. I can also put things where I want to put
-        things without having to be restriced. So why exactly did I move away
+        things without having to be restricted. So why exactly did I move away
         from a cookie-cutter website and decided to code my own website? Well
         first off, I can customize it however I want. I can have custom fonts, I
         can move around the images, and I can make it how I wanted to make it in
@@ -98,7 +98,7 @@
     <footer>
       <div class="footer-container">
         <div class="footer-left">
-          <p>&copy; 2025 AIGamesDeveloper. All Rights Reserved.</p>
+          <p>&copy; <span id="copyright-year"></span> AIGamesDeveloper. All Rights Reserved.</p>
         </div>
         <div class="footer-right">
           <ul class="social-links">
@@ -131,5 +131,8 @@
       </div>
     </footer>
     <script src="/../script.js"></script>
+    <script>
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
