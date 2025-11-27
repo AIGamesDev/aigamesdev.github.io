@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (navbar) {
     function changeNavbarColor() {
-      const scrollThreshold = window.innerWidth < 850 ? 600 : 850;
+      const scrollThreshold = window.innerWidth < 850 ? 700 : 850;
       if (window.scrollY > scrollThreshold) {
         navbar.classList.add("scrolled");
       } else {
